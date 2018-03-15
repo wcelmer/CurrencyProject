@@ -78,6 +78,8 @@
             </div>
           </div>
         </div>
+
+
         <div class="row mt-sm-4 mt-md-0">
           <div class="col-sm-12 col-md-8 mb-4">
               <h3>Mapa GOOGLE?</h3>
@@ -88,25 +90,86 @@
           </div>
 
           <div class="col-sm-12 col-md-4">
-            <h3 class="mb-4">Pomocne strony</h3>
+            <h3 class="mb-4">Pomocne rzeczy -></h3>
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Linki
+                    </button>
+                  </h5>
+                </div>
 
-            <ul class="nav flex-column nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">NBP</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Waluty24</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="nav flex-column nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">NBP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Waluty24</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Stooq</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Kalkulator
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="SelectCurrency">Waluta</label>
+                      </div>
+                      <select class="custom-select" id="SelectCurrency">
+                        <option value="1">Euro</option>
+                        <option value="2">Funt</option>
+                        <option value="3">Dolar</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="SelectChange">Chcę</label>
+                      </div>
+                      <select class="custom-select" id="SelectChange">
+                        <option value="1">Kupić</option>
+                        <option value="2">Sprzedać</option>
+                      </select>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Ilość</span>
+                      </div>
+                      <input type="number" class="form-control">
+                      <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                      </div>
+                    </div>
+                    <fieldset disabled>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Kurs</span>
+                        </div>
+                        <input id="finalPrice" type="text" class="form-control" placeholder="0.0000"></input>
+                      </div>
+                    </fieldset>
+                    <button id="checkCurr" class="btn btn-primary btn-lg" href="#" role="button">Sprawdź</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
-
 </div>
 
 

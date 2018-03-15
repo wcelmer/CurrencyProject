@@ -60,10 +60,39 @@ var UsdCurr = $('#actualUsdCurr');
   loadUSD();
   loadGBP();
 
+
+
+    //Calculator
+
+    var checkCurrBtn = $('#checkCurr');
+    var selectCurrency = $('#SelectCurrency');
+    var selectChange = $('#SelectChange');
+    var finalPrice = $('#finalPrice');
+
+    function calcAll() {
+      if (selectCurrency.val() == 1 && selectChange.val() == 1) {
+        finalPrice.attr("placeholder", Number(EurCurr.text()) + 0.015);
+    } else if (selectCurrency.val() == 2 && selectChange.val() == 1) {
+      finalPrice.attr("placeholder", Number(GbpCurr.text()) + 0.015);
+    } else if (selectCurrency.val() == 3 && selectChange.val() == 1) {
+      finalPrice.attr("placeholder", Number(UsdCurr.text()) + 0.015);
+    } else if (selectCurrency.val() == 1 && selectChange.val() == 2) {
+      finalPrice.attr("placeholder", Number(EurCurr.text()) - 0.015);
+    } else if (selectCurrency.val() == 2 && selectChange.val() == 2) {
+      finalPrice.attr("placeholder", Number(GbpCurr.text()) - 0.015);
+    } else if (selectCurrency.val() == 3 && selectChange.val() == 2) {
+      finalPrice.attr("placeholder", Number(UsdCurr.text()) - 0.015);
+    }
+  }
+
+    checkCurrBtn.on('click', calcAll);
+
+
+
   // Google Maps
 
   function initMap() {
-      
+
       var uluru = {lat: 52.3979493, lng: 17.2261939};
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 16,
@@ -75,4 +104,19 @@ var UsdCurr = $('#actualUsdCurr');
       });
     }
 
-    initMap();
+  initMap();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //bla
