@@ -70,18 +70,24 @@ var UsdCurr = $('#actualUsdCurr');
     var finalPrice = $('#finalPrice');
 
     function calcAll() {
+      //Euro klient kupuje
       if (selectCurrency.val() == 1 && selectChange.val() == 1) {
-        finalPrice.attr("placeholder", Number(EurCurr.text()) + 0.015);
+        finalPrice.attr("placeholder", Number(Number(EurCurr.text()) + 0.015).toFixed(4));
+        //funt klient kupuje
     } else if (selectCurrency.val() == 2 && selectChange.val() == 1) {
-      finalPrice.attr("placeholder", Number(GbpCurr.text()) + 0.015);
+      finalPrice.attr("placeholder", Number(Number(GbpCurr.text()) + 0.015).toFixed(4));
+      //dolar klient kupuje
     } else if (selectCurrency.val() == 3 && selectChange.val() == 1) {
-      finalPrice.attr("placeholder", Number(UsdCurr.text()) + 0.015);
+      finalPrice.attr("placeholder", Number(Number(UsdCurr.text()) + 0.015).toFixed(4));
+      //Euro klient sprzedaje
     } else if (selectCurrency.val() == 1 && selectChange.val() == 2) {
-      finalPrice.attr("placeholder", Number(EurCurr.text()) - 0.015);
+      finalPrice.attr("placeholder", Number(Number(EurCurr.text()) - 0.015).toFixed(4));
+      //funt klient sprzedaje
     } else if (selectCurrency.val() == 2 && selectChange.val() == 2) {
-      finalPrice.attr("placeholder", Number(GbpCurr.text()) - 0.015);
+      finalPrice.attr("placeholder", Number(Number(GbpCurr.text()) - 0.015).toFixed(4));
+      //dolar klient sprzedaje
     } else if (selectCurrency.val() == 3 && selectChange.val() == 2) {
-      finalPrice.attr("placeholder", Number(UsdCurr.text()) - 0.015);
+      finalPrice.attr("placeholder", Number(Number(UsdCurr.text()) - 0.015).toFixed(4));
     }
   }
 
