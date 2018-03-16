@@ -54,7 +54,7 @@
             <div class="card mb-4">
                 <div class="card-body text-center">
                   <h5 class="card-title">EUR / PLN</h5>
-                  <p class="card-text" id="actualEurCurr">Tu bedzie cena z NBP</p>
+                  <p class="card-text" id="actualEurCurr">Cena z NBP</p>
                   <a href="#" class="card-link">Aktualna cena</a>
                 </div>
             </div>
@@ -63,7 +63,7 @@
             <div class="card mb-4">
                 <div class="card-body text-center">
                     <h5 class="card-title">GBP / PLN</h5>
-                    <p class="card-text" id="actualGbpCurr">Tu bedzie cena z NBP</p>
+                    <p class="card-text" id="actualGbpCurr">Cena z NBP</p>
                     <a href="#" class="card-link">Aktualna cena</a>
                 </div>
             </div>
@@ -72,7 +72,7 @@
             <div class="card mb-4">
               <div class="card-body text-center">
                   <h5 class="card-title">USD / PLN</h5>
-                  <p class="card-text" id="actualUsdCurr">Tu bedzie cena z NBP</p>
+                  <p class="card-text" id="actualUsdCurr">Cena z NBP</p>
                   <a href="#" class="card-link">Aktualna cena</a>
               </div>
             </div>
@@ -150,7 +150,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text">Ilość</span>
                       </div>
-                      <input type="number" class="form-control">
+                      <input id="amount" type="number" class="form-control">
                       <div class="input-group-append">
                         <span class="input-group-text">.00</span>
                       </div>
@@ -161,6 +161,14 @@
                           <span class="input-group-text">Kurs</span>
                         </div>
                         <input id="finalPrice" type="text" class="form-control" placeholder="0.0000"></input>
+                      </div>
+                    </fieldset>
+                    <fieldset disabled>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Kwota</span>
+                        </div>
+                        <input id="finalAmount" type="text" class="form-control" placeholder="0.0000"></input>
                       </div>
                     </fieldset>
                     <button id="checkCurr" class="btn btn-primary btn-lg" href="#" role="button">Sprawdź</button>

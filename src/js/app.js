@@ -65,29 +65,76 @@ var UsdCurr = $('#actualUsdCurr');
     //Calculator
 
     var checkCurrBtn = $('#checkCurr');
-    var selectCurrency = $('#SelectCurrency');
-    var selectChange = $('#SelectChange');
-    var finalPrice = $('#finalPrice');
 
     function calcAll() {
-      //Euro klient kupuje
-      if (selectCurrency.val() == 1 && selectChange.val() == 1) {
-        finalPrice.attr("placeholder", Number(Number(EurCurr.text()) + 0.015).toFixed(4));
-        //funt klient kupuje
-    } else if (selectCurrency.val() == 2 && selectChange.val() == 1) {
-      finalPrice.attr("placeholder", Number(Number(GbpCurr.text()) + 0.015).toFixed(4));
-      //dolar klient kupuje
-    } else if (selectCurrency.val() == 3 && selectChange.val() == 1) {
-      finalPrice.attr("placeholder", Number(Number(UsdCurr.text()) + 0.015).toFixed(4));
-      //Euro klient sprzedaje
-    } else if (selectCurrency.val() == 1 && selectChange.val() == 2) {
-      finalPrice.attr("placeholder", Number(Number(EurCurr.text()) - 0.015).toFixed(4));
-      //funt klient sprzedaje
-    } else if (selectCurrency.val() == 2 && selectChange.val() == 2) {
-      finalPrice.attr("placeholder", Number(Number(GbpCurr.text()) - 0.015).toFixed(4));
-      //dolar klient sprzedaje
-    } else if (selectCurrency.val() == 3 && selectChange.val() == 2) {
-      finalPrice.attr("placeholder", Number(Number(UsdCurr.text()) - 0.015).toFixed(4));
+
+      var selectCurrency = $('#SelectCurrency').val();
+      var selectChange = $('#SelectChange').val();
+      var amount = $('#amount').val();
+      var finalPrice = $('#finalPrice');
+      var finalAmount = $('#finalAmount');
+
+
+      //Euro klient kupuje poniżej 1k
+      if (selectCurrency == 1 && selectChange == 1 && amount < 1000) {
+        let price = Number(Number(EurCurr.text()) + 0.0145).toFixed(4);
+        finalPrice.attr("placeholder", price);
+        finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+        //funt klient kupuje poniżej 1k
+    } else if (selectCurrency == 2 && selectChange == 1 && amount < 1000) {
+      let price = Number(Number(GbpCurr.text()) + 0.0145).toFixed(4);
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+      //dolar klient kupuje poniżej 1k
+    } else if (selectCurrency == 3 && selectChange == 1 && amount < 1000) {
+      let price = Number(Number(UsdCurr.text()) + 0.0145).toFixed(4)
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+      //Euro klient sprzedaje poniżej 1k
+    } else if (selectCurrency == 1 && selectChange == 2 && amount < 1000) {
+      let price = Number(Number(EurCurr.text()) - 0.0145).toFixed(4);
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+      //funt klient sprzedaje poniżej 1k
+    } else if (selectCurrency == 2 && selectChange == 2 && amount < 1000) {
+      let price = Number(Number(GbpCurr.text()) - 0.0145).toFixed(4);
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+      //dolar klient sprzedaje poniżej 1k
+    } else if (selectCurrency == 3 && selectChange == 2 && amount < 1000) {
+      let price = Number(Number(UsdCurr.text()) - 0.0145).toFixed(4)
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+      //euro klient kupuje powyzej 1k
+    } else if (selectCurrency == 1 && selectChange == 1 && amount >= 1000) {
+      let price = Number(Number(EurCurr.text()) + 0.0112).toFixed(4);
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+      //funt klient kupuje powyzej 1k
+    } else if (selectCurrency == 2 && selectChange == 1 && amount >= 1000) {
+      let price = Number(Number(GbpCurr.text()) + 0.0112).toFixed(4);
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+      //dolar klient kupuje powyzej 1k
+    } else if (selectCurrency == 3 && selectChange == 1 && amount >= 1000) {
+      let price = Number(Number(UsdCurr.text()) + 0.0112).toFixed(4)
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+      //Euro klient sprzedaje powyzej 1k
+    } else if (selectCurrency == 1 && selectChange == 2 && amount >= 1000) {
+      let price = Number(Number(EurCurr.text()) - 0.0112).toFixed(4);
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+      //funt klient sprzedaje powyzej 1k
+    } else if (selectCurrency == 2 && selectChange == 2 && amount >= 1000) {
+      let price = Number(Number(GbpCurr.text()) - 0.0112).toFixed(4);
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
+      //dolar klient sprzedaje powyzej 1k
+    } else if (selectCurrency == 3 && selectChange == 2 && amount >= 1000) {
+      let price = Number(Number(UsdCurr.text()) - 0.0112).toFixed(4)
+      finalPrice.attr("placeholder", price);
+      finalAmount.attr("placeholder", Number(price*amount).toFixed(2));
     }
   }
 
