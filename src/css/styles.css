@@ -6060,8 +6060,11 @@ footer {
 h1, h2, h4 {
   color: #006115; }
 
-h1 {
+h1, p {
   text-shadow: silver 2px 2px 1px; }
+
+a {
+  text-shadow: none; }
 
 h3 {
   color: #006115; }
@@ -6073,8 +6076,7 @@ span {
   color: #006115; }
 
 p {
-  color: #0b3c5d;
-  text-shadow: silver 2px 2px 1px; }
+  color: #0b3c5d; }
 
 #map {
   width: 100%;
