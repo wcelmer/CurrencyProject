@@ -60,6 +60,12 @@ var UsdCurr = $('#USD');
   loadUSD();
   loadGBP();
 
+  // Actual Prices Buttons
+
+  $('#actualPriceEur').on('click', loadEUR);
+  $('#actualPriceGbp').on('click', loadGBP);
+  $('#actualPriceUsd').on('click', loadUSD);
+
 
     //Calculator
 
@@ -127,6 +133,8 @@ var UsdCurr = $('#USD');
     }
 
   initMap();
+
+
 
 
 
