@@ -3,7 +3,7 @@ $theme-colors: (
 );
 @import "node_modules/bootstrap/scss/bootstrap";
 
-$secColor: rgba(59, 142, 11, 1);
+$secColor: rgba(0, 97, 21, 1);
 $bg-color: #f4f4f4;
 $thirdColor: #e8e8e8;
 
@@ -22,7 +22,7 @@ $bg-color: #f5f5f5; / #e8e8e8 /f4f4f4
    background-color: $thirdColor;
  }
  .card,  {
-   background-color: rgba(142, 137, 11, 0.2);
+   background-color: rgba(230, 230, 230, 0.75);
  }
  .position-relative{
    z-index: 2;
@@ -46,7 +46,7 @@ $bg-color: #f5f5f5; / #e8e8e8 /f4f4f4
     width: 100%;
     height: 480px;
     background-color: white;
-    border: 2px solid #e8e8e8;
+    border: 1px solid #f4f4f4;
     border-radius: 4px;
   }
  #myVideo {
@@ -56,4 +56,8 @@ $bg-color: #f5f5f5; / #e8e8e8 /f4f4f4
     min-width: 100%;
     min-height: 100%;
     z-index: 0;
+}
+.jumbotron{
+  background-color: rgba(230, 230, 230, 0.45);
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
