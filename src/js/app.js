@@ -80,7 +80,7 @@ var UsdCurr = $('#USD');
       var finalAmount = $('#finalAmount');
 
       function currencyCalc(direction, currency, amount) {
-        let diff = amount > 1000 ? 0.0112 : 0.0145;
+        let diff = amount > 1000 ? 0.0145 : 0.0234;
         let value = Number($('#'+currency).text());
         if (direction === 'buy'){
           let price = Number(value - diff).toFixed(4);
@@ -133,18 +133,6 @@ var UsdCurr = $('#USD');
     }
 
   initMap();
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
