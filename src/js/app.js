@@ -66,6 +66,13 @@ var UsdCurr = $('#USD');
   $('#actualPriceGbp').on('click', loadGBP);
   $('#actualPriceUsd').on('click', loadUSD);
 
+  // NICE TRANSITIONS PAGE AFTER CLICK SIDEBAR NAVS
+
+  $("#navbarNav a").click(function() {
+    $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top - 60 }, "slow");
+    return false;
+  });
+
 
     //Calculator
 
