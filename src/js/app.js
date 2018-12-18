@@ -122,6 +122,28 @@ var UsdCurr = $('#USD');
 
     checkCurrBtn.on('click', calcAll);
 
+    // button reload actual prices
+
+  checkCurrBtn.on('click', function () {
+    $('.alert').show();
+  });
+  // TOOLTIPS
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
+  // Flag icons adding in background
+
+  function setBackGround() {
+    let el = $('#OurCurrency li');
+    for (var i = 0; i < el.length; i++) {
+      let clas = el[i].className;
+
+      $(el[i]).css('background-image', 'url(' + './flag-icon/'+ clas + '.png' +')');
+    }
+  }
+  setBackGround();
+
 
 
   // Google Maps

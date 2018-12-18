@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
-        <title>Kantor Kostrzyn</title>
-        <meta http-equiv="x-ua-compatible" content="ie=edge" charset="UTF-8">
+      <title>Kantor Kostrzyn</title>
+      <meta http-equiv="x-ua-compatible" content="ie=edge" charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:500" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
-        <link rel="stylesheet" href="./css/bootstrap.css">
-        <link rel="stylesheet" href="./css/styles.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+      <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:500" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+      <link rel="stylesheet" href="./css/bootstrap.css">
+      <link rel="stylesheet" href="./css/styles.css">
     </head>
-
     <body>
-      <div class="container">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#top"><img src="./img/ico-kantor.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">Kantor Kostrzyn</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <nav class="navbar fixed-top navbar-expand-lg bg-primary">
+            <a class="navbar-brand" href="#top">
+              <img src="./img/ico-kantor.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="brand-logo">
+              Kantor Kostrzyn
+            </a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
                 <ul id="navbarNav" class="navbar-nav ml-auto mr-4">
                     <li class="nav-item">
                         <a class="nav-link" href="#OurCurrency">Nasze waluty</a>
@@ -36,36 +36,29 @@
                           <a class="dropdown-item" href="tel:+48518922113">Tel: 518 922 113</a>
                           <a class="dropdown-item" href="mailto:w.celmer@me.com">Mail: w.celmer@me.com</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#mapSection">Kostrzyn ul.Poznańska 5</a>
+                          <a class="dropdown-item" href="https://www.google.pl/maps/place/Kantor+Wymiany+Walut/@52.397907,17.2262927,15z/data=!4m5!3m4!1s0x0:0x2cce5aa5dcecce61!8m2!3d52.397907!4d17.2262927">Kostrzyn ul.Poznańska 5</a>
                       </div>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div id="top" class="jumbotron pb-3">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="position-relative">
-                <h1 class="display-5 mt-4">Wygodnie. Szybko.<br>Bezpiecznie.</h1>
-                <p class="lead">Kantor Kostrzyn to nowa placówka stacjonarna zajmująca się skupem oraz sprzedażą walut obcych.<br>
-                  Nasi Klienci mogą zawsze liczyć na fachową poradę oraz najkorzystniejsze warunki współpracy.<br>
-                  Wymiana walut przebiega szybko, bezpiecznie i w miłej atmosferze. <br> <br>
-                  Zapraszamy do odwiedzenia naszego kantoru oraz do negocjacji kursów przy większych transakcjach.
-                </p>
-                <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="tel:+48518922113" role="button">+48 518 922 113</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- The video -->
-        <video autoplay muted loop id="myVideo">
-          <source src="./video/kantor.mp4" type="video/mp4">
-        </video>
-        <div class="row">
+      <div id="top" class="d-flex align-items-center">
+        <h1 class="text-focus-in">KANTOR KOSTRZYN</h1>
+      </div>
+      <div class="about d-flex flex-column bd-highlight mt-4 text-center p-4">
+        <h1>O NAS</h1>
+        <p class="lead bd-highlight">Kantor Kostrzyn to nowa placówka stacjonarna zajmująca się skupem oraz sprzedażą walut obcych.<br>
+          Nasi Klienci mogą zawsze liczyć na fachową poradę oraz najkorzystniejsze warunki współpracy.<br>
+          Wymiana walut przebiega szybko, bezpiecznie i w miłej atmosferze. <br> <br>
+          Zapraszamy do odwiedzenia naszego kantoru oraz do negocjacji kursów przy większych transakcjach.
+        </p>
+        <p class="lead bd-highlight">
+          <a class="btn btn-primary btn-lg" href="tel:+48518922113" role="button">+48 518 922 113</a>
+        </p>
+      </div>
+      <div class="currency row">
           <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <div class="card mb-4">
+            <div class="card m-4">
                 <div class="card-body text-center">
                   <h6 class="card-title">EUR / PLN</h6>
                   <h4 class="card-title" id="EUR">Kurs NBP</h4>
@@ -74,7 +67,7 @@
             </div>
           </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <div class="card mb-4">
+            <div class="card m-4">
                 <div class="card-body text-center">
                     <h6 class="card-title">GBP / PLN</h6>
                     <h4 class="card-title" id="GBP">Kurs NBP</h4>
@@ -83,7 +76,7 @@
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <div class="card mb-4">
+            <div class="card m-4">
               <div class="card-body text-center">
                   <h6 class="card-title">USD / PLN</h6>
                   <h4 class="card-title" id="USD">Kurs NBP</h4>
@@ -92,13 +85,13 @@
             </div>
           </div>
         </div>
-        <div  class="row mt-sm-4 mt-md-0 mb-4">
-          <div id="mapSection" class="col-sm-12 col-md-8 mb-4 pt-2 pb-3 rounded">
-              <h3 class="mb-3">Google Map</h3>
-              <div id="map">
-              </div>
+      <div class="googleMap row mt-sm-4 mt-md-0 p-4">
+        <div id="mapSection" class="col-sm-12 col-md-8 pt-2 pb-3 rounded">
+            <h3 class="mb-3 text-center">Google Map</h3>
+            <div id="map">
+            </div>
           </div>
-          <div class="col-sm-12 col-md-4 mb-4">
+        <div class="col-sm-12 col-md-4">
             <h3 class="mb-4 text-center">Kalkulator</h3>
             <div id="accordion">
               <div class="card">
@@ -155,7 +148,13 @@
                         <input id="finalAmount" type="text" class="form-control" placeholder="0.0000"></input>
                       </div>
                     </fieldset>
-                    <button id="checkCurr" class="btn btn-primary btn-lg" href="#" role="button">Sprawdź</button>
+                    <div class="d-flex">
+                      <button id="checkCurr" class="btn btn-primary btn-lg col-4" href="#" role="button">Sprawdź</button>
+                      <div class="alert alert-info alert-dismissable text-center p-2 slide-in-blurred-top col-8">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        Kurs może być nie aktualny! Prosimy o kontakt telefoniczny.
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -185,96 +184,42 @@
               </div>
             </div>
           </div>
-      </div>
-      <!-- Another Currency -->
-      <div id="OurCurrency" class="card text-center mb-4">
-        <div class="card-header">
-          <h3>Nasze waluty</h3>
         </div>
-        <div class="card-body">
-          <div id="flags" class="row d-flex justify-content-md-around justify-content-sm-center justify-content-center">
-            <div class="card col-md-2 col-sm-4 col-xs-4 m-2 p-2">
-              <img class="card-img-top mt-2" src="./img/EUR.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">EUR</p>
-              </div>
-            </div>
-            <div class="card col-md-2 col-sm-4 col-xs-4 m-2 p-2">
-              <img class="card-img-top mt-2" src="./img/USD.gif" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">USD</p>
-              </div>
-            </div>
-            <div class="card col-md-2 col-sm-4 col-xs-4 m-2 p-2">
-              <img class="card-img-top mt-2" src="./img/GBP.gif" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">GBP</p>
-              </div>
-            </div>
-            <div class="card col-md-2 col-sm-4 col-xs-4 m-2 p-2">
-              <img class="card-img-top mt-2" src="./img/Dkk.gif" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">DKK</p>
-              </div>
-            </div>
-            <div class="card col-md-2 col-sm-4 col-xs-4 m-2 p-2">
-              <img class="card-img-top mt-2" src="./img/NOK.gif" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">NOK</p>
-              </div>
-            </div>
-            <div class="card col-md-2 col-sm-4 col-xs-4 m-2 p-2">
-              <img class="card-img-top mt-2" src="./img/SEK.gif" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">SEK</p>
-              </div>
-            </div>
-            <div class="card col-md-2 col-sm-4 col-xs-4 m-2 p-2">
-              <img class="card-img-top mt-2" src="./img/CZK.gif" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">CZK</p>
-              </div>
-            </div>
-            <div class="card col-md-2 col-sm-4 col-xs-4 m-2 p-2">
-              <img class="card-img-top mt-2" src="./img/CHF.gif" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">CHF</p>
-              </div>
-            </div>
-            <div class="card col-md-2 col-sm-4 col-xs-4 m-2 p-2">
-              <img class="card-img-top mt-2" src="./img/CAD.gif" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">CAD</p>
-              </div>
-            </div>
-            <div class="card col-md-2 col-sm-4 col-xs-4 m-2 p-2">
-              <img class="card-img-top mt-2" src="./img/AUD.gif" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">AUD</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-footer text-muted">
-          Wszystkie ceny do negocjacji !
-        </div>
+      <div id="OurCurrency">
+        <ul class="list-inline d-flex justify-content-center align-items-center flex-wrap m-4">
+          <li class="eur" data-toggle="tooltip" data-placement="top" title="EURO"></li>
+          <li class="usd" data-toggle="tooltip" data-placement="top" title="Dolar amerykański"></li>
+          <li class="gbp" data-toggle="tooltip" data-placement="top" title="Funt brytyjski"></li>
+          <li class="cad" data-toggle="tooltip" data-placement="top" title="Dolar kanadyjski"></li>
+          <li class="aud" data-toggle="tooltip" data-placement="top" title="Dolar australijski"></li>
+          <li class="huf" data-toggle="tooltip" data-placement="top" title="Forint węgierski"></li>
+          <li class="nok" data-toggle="tooltip" data-placement="top" title="Korona norweska"></li>
+          <li class="sek" data-toggle="tooltip" data-placement="top" title="Korona szwedzka"></li>
+          <li class="dkk" data-toggle="tooltip" data-placement="top" title="Korona duńska"></li>
+          <li class="czk" data-toggle="tooltip" data-placement="top" title="Korona czeska"></li>
+          <li class="hrk" data-toggle="tooltip" data-placement="top" title="Kuny chorwackie"></li>
+          </ul>
       </div>
-      <!--Footer-->
-      <footer class="fixed-bottom font-small">
-        <div class="footer-copyright py-1 text-center">
-           © 2018  <span>Ceny podane na stronie mają charakter informacyjny.</span>
-      </div>
-    </footer>
-</div>
+      <footer class="fluid font-small">
+        <div class="footer-copyright p-3 text-center ">
+           © 2018  <span>Ceny podane na stronie są kursem średnim Narodowego Banku Polskiego. Nie jest to kurs wymiany w kantorze. </span>
+        </div>
+      </footer>
 
 
-        <script src="./js/jquery.min.js"></script>
-        <script async defer
+      <script src="./js/jquery.min.js"></script>
+      <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvGoZdiqt85NOpYmF_teYbhm-noHwqqAc&callback=initMap">
-        </script>
-        <script src="./js/app.js"></script>
-        <script src="./js/popper.min.js"></script>
-        <script src="./js/bootstrap.min.js"></script>
-
+      </script>
+      <script src="./js/app.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
     </body>
 </html>
+
+<!--
+<div class="position-relative">
+  <h1 class="display-5 mt-4">Wygodnie. Szybko.<br>Bezpiecznie.</h1>
+
+</div>
+-->
